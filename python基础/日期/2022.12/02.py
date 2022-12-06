@@ -1,5 +1,5 @@
 """
-02 - 
+02 -
 
 Date: 2022/12/2
 
@@ -39,7 +39,7 @@ Date: 2022/12/2
 #
 # print('%s充值成功！当前游戏币是：%d'%(username,coins))
 
-#练习
+# 练习
 
 
 '''
@@ -51,7 +51,7 @@ Date: 2022/12/2
 
 xxx拥有xxxx装备，花了xxx钱
 '''
-#写法1
+# 写法1
 
 # print('''
 # ***********
@@ -83,4 +83,4 @@ pay = input('输入付款金额:')
 
 equipment = upgrade_eqipment
 
-print('{}拥有{}装备,购买此装备花了{}元'.format(role,equipment,pay))
+print('{}拥有{}装备,购买此装备花了{}元'.format(role, equipment, pay))

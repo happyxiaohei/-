@@ -1,5 +1,5 @@
 """
-03 - 
+03 -
 
 Date: 2022/11/30
 
@@ -20,12 +20,9 @@ adf = '''
 年龄 ： %s
 班级 ： %s
 
-'''%(name,age,clazz)
+''' % (name, age, clazz)
 
-print (adf)
-
-
-
+print(adf)
 
 
 msg = '''
@@ -33,7 +30,7 @@ msg = '''
 我的名字 ： %s
 今年%s岁
 现在在%s班级
-'''%(name,age,clazz)
+''' % (name, age, clazz)
 print(msg)
 
 # %s 中的s是代表str 这个内置函数，加百分号就是强制类型的转换
@@ -43,9 +40,4 @@ print(msg)
 
 #  %f  float 小数点后面的为数， 而且是四舍五入的方式记录
 salary = 8899.32895
-print('我的薪水是：%.4f'%salary)
-
-
-
-
-
+print('我的薪水是：%.4f' % salary)

@@ -6,39 +6,39 @@ Date: 2022/12/3
 """
 name = 'admin'
 
-#将'admin'的值赋值给变量name
+# 将admin的值赋值给变量name
 
-#1+1=2
+# 1+1=2
 
 name1 = name
 
-print(id(name),name)
-print(id(name1),name1)
+print(id(name), name)
+print(id(name1), name1)
 
 
 name2 = name
-print(id(name2),name2)
+print(id(name2), name2)
 
 #  id()
 
 name1 = 'admin1'
 
-print(id(name),name)
-print(id(name1),name1)
+print(id(name), name)
+print(id(name1), name1)
 
 name = 'admin2'
 
-print(id(name),name)
+print(id(name), name)
 
 name3 = name
 
-print(id(name3),name3)
+print(id(name3), name3)
 
 # 扩展后的赋值符号   +=  -=  *= /=  ...
 
 num = 8
 
-num += 5   #  num = num + 5  此时+ 代表数学加号
+num += 5  # num = num + 5  此时+ 代表数学加号
 
 num -= 10  # num = num - 10
 print(num)
@@ -46,7 +46,7 @@ print(num)
 a = 'abc'
 
 a += 'ff'   # 等价与:  a = a + 'ff'  此时'+'就是连接符号
-            # 此时包含两个动作: 1. 连接 2.连接后的结果赋值
+# 此时包含两个动作: 1. 连接 2.连接后的结果赋值
 
 print(a)
 
@@ -58,7 +58,7 @@ print(a)
 '''
 测试:
 
--= 
+-=
 *=
 /=
 只是可以应用在数值,字符串不支持.
@@ -66,7 +66,7 @@ print(a)
 
 
 # + - * /  算术运算符
-#扩展的算术运算符: ** //
+# 扩展的算术运算符: ** //
 
 a = 8
 b = 2
@@ -91,10 +91,6 @@ result = a * b
 #
 
 
-
-
-
-
 '''
 总结:
 print()输出
@@ -110,8 +106,8 @@ print(values,...,sep = '',end='\n')
 输出字符串:
 
 1.占位符
-%s  %d  %f  
-pront('%s,%d,%f'%(value,value.value))
+%s  %d  %f
+print('%s,%d,%f'%(value,value.value))
 类型转换:
 int --str
 age = 18 -->'18'
@@ -120,7 +116,7 @@ str(age)-->'18'
 str -->int
 s = '18'
 s = '18a'
-int(s --->typerror
+int(s ---> typeerror
 
 
 
@@ -132,11 +128,11 @@ input() 输入:阻塞式
 name = input('  请输入姓名:')
 
  运算符:
- 
+
  算数运算符:  + - * / % ** //
- 
+
 print('*'*50)
- 
+
 赋值运算符:
 
 = += -= .............
@@ -152,18 +148,17 @@ print('*' * 50)
 
 print('\t 英雄联盟')
 
-print('*'*50)
+print('*' * 50)
+
+name = 'jack'
 
 
+name1 = 'jack'
 
+name2 = 'jack1'
 
+print(id(name))
 
+print(id(name1))
 
-
-
-
-
-
-
-
-
+print(id(name2))

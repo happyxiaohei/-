@@ -5,7 +5,7 @@ Date: 2022/11/30
 
 """
 name = '啊甘'
-age  = 26
+age = 26
 clazz = 2022
 
 
@@ -14,7 +14,7 @@ msg = '''
 我的名字 ： %s
 今年%s岁
 现在在%s班级
-'''%(name,age,clazz)
+''' % (name, age, clazz)
 print(msg)
 
 # %s 中的s是代表str 字符串类型 这个内置函数，加百分号就是强制类型的转换
@@ -53,11 +53,11 @@ toatl = ticket * count
 
 # 写法1
 
-print('.'*30)
+print('.' * 30)
 print('写法1')
 dingdan = '''
 约起来去楼上看电影的订单
-电影名称：《 %s 》 
+电影名称：《 %s 》
 人数：%d 人
 单价: %.1f 元
 总票价: %.1f 元
@@ -65,21 +65,21 @@ dingdan = '''
 print(dingdan)
 
 
-#写法2
-print('.'*30)
+# 写法2
+print('.' * 30)
 print('写法2')
-dingdan1 ='约起来去楼上看电影的订单\n 电影名称: 《 %s 》 \n 人数：%d人 \n 单价：%.1f 元 \n 总票价:%.1f 元'\
-% (movie, count, ticket,toatl)
+dingdan1 = '约起来去楼上看电影的订单\n 电影名称: 《 %s 》 \n 人数：%d人 \n 单价：%.1f 元 \n 总票价:%.1f 元'\
+    % (movie, count, ticket, toatl)
 print(dingdan1)
 # 写法3
-print('.'*30)
+print('.' * 30)
 print('写法3')
-print('电影名称：《 %s 》 '%movie)
-print('人数：%d 人 '%count)
-print('单价: %.0f 元 '%ticket)
-print('总票价: %.1f 元 '%toatl)
+print('电影名称：《 %s 》 ' % movie)
+print('人数：%d 人 ' % count)
+print('单价: %.0f 元 ' % ticket)
+print('总票价: %.1f 元 ' % toatl)
 
-print('.'*30)
+print('.' * 30)
 
 # 字符串的格式化输出
 # 方式：1、使用占位符 %s  %d  %f   2. format函数
@@ -96,5 +96,5 @@ age = 3
 hobby = '玩恐龙！'
 money = 5.89
 
-message = '{}今年{}岁,最喜欢{},有零花钱：{}'.format(name,age,hobby,money)
+message = '{}今年{}岁,最喜欢{},有零花钱：{}'.format(name, age, hobby, money)
 print(message)
