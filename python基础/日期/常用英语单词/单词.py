@@ -19,4 +19,15 @@ operator   运算符
 identity  特点,特征
 
 
+impot  导入
+random   随机数,在,,,,期间(之间)
+range  范围
+integer   整型
+sequence  序列  队列
+include    包含
+exclude    不包含
+pass    空语句   
+break
+
+
 '''

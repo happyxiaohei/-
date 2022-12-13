@@ -139,7 +139,4 @@ false or false   ----> false
 
 '''
 
-a = 1
-b = 2
-c = 123
-print(a + b + c + c + c + c + b)
+
