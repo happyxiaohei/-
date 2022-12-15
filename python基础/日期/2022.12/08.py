@@ -132,29 +132,65 @@ pass    空语句
 #
 # else:
 #     print('账户被锁定,需要重新激活')
-
-
-
-for i in range(3):
-    if  i ==1 :
-        print('这家店是黑店,馒头有毒!等着关门把!')
-        break  #跳出循环结构
-        print('123123')  # 即使有语句也不会执行,干脆别写
-    else:
-        print('这家店的馒头真香啊!要多吃几个啊')
-
 #
-# # range的范围正常执行完毕,而且没有异常break.就可以执行else,
-# # 只要有break执行了就不会执行else
+#
+#
+# for i in range(4):
+#     if  i ==1 :
+#         print('这家店是黑店,馒头有毒!等着关门把!')
+#         break  #跳出循环结构
+#         print('123123')  # 即使有语句也不会执行,干脆别写
+#     else:
+#         print('这家店的馒头真香啊!要多吃几个啊')
+#
 # else:
 #     print('-----> 进入消协大门')
+#
+#
 
 
+'''
 
 
+range的范围正常执行完毕,而且没有异常break.就可以执行else,
+只要有break执行了就不会执行else
+
+range(n)   ~ range (0,n)
+range(m,n)   ~ range (start,end)
+range(m,n,step) ~ range (start,end,step)
+ step :  步长
 
 
+           0.1.2.3.4
+for i in range (5)
+    print (i)
+    
+for i in range 
+    pass     空语句
+else:
+    pass      空语句
+    
+break     跳出循环结构
+    
+    
+'''
+#
+# for i in range(1,100,2):    # range(start,end )  必须三个参数必须全的
+#     print('------>',i)
+#
+#
+#
 
+'''
+
+while:  关键字   完成循环
+
+while  条件:
+    语句体(块)
+else :
+    语句体(块)
+    
+    '''
 
 
 
