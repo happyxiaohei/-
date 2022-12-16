@@ -138,5 +138,3 @@ false or true   ----> true
 false or false   ----> false
 
 '''
-
-

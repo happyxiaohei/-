@@ -1,5 +1,6 @@
 """
-10 - 
+
+10 -
 
 Date: 2022/12/15
 
@@ -18,36 +19,46 @@ Date: 2022/12/15
 '''
 
 
-
-
-
-
-
 import random
-
-print('*'*30)
+print('*' * 30)
 print('欢迎进入澳门赌场')
-print('*'*30)
+print('*' * 30)
 
 username = input('请输入你的用户名:')
 money = 0
 
-#判断 用户是否进入游戏   修改方案
+# 判断 用户是否进入游戏   修改方案
 
 # # answer = input('确定进入游戏吗? (y/n)')
 # if answer == 'y':
 # 在判断用户是否进入游戏时，应该使用一个while循环，直到用户输入'y'或'n'为止。
 
-while True :
+
+#  这种写法呢,用户输入其他数的直接就退出循环了
+
+# while True:
+#     answer = input('确定进入游戏吗? (y/n)')
+#     if answer == 'y':
+#         break
+#     else:
+#         print('退出游戏!!!!!')
+#         exit()
+#
+
+
+# 而这种写法呢,用户输入错误后会继续循环
+
+while True:
     answer = input('确定进入游戏吗? (y/n)')
     if answer == 'y':
         break
     elif answer == 'n':
-        print('退出游戏')
+        print('退出游戏!!!!!')
         exit()
 
-#判断游戏币是否充足   修改方案
-     #判断游戏币是否充足
+
+# 判断游戏币是否充足   修改方案
+     # 判断游戏币是否充足
 #     while money <2 :
 #
 #         n = int(input('金币不足,请充值(100块钱等于30个游戏币,充值必须是100的倍数)'))
@@ -56,44 +67,41 @@ while True :
 #             money= (n//100)*30
 #
 # 在判断金币数量是否足够时，应该使用一个while循环，直到用户充值后金币数量大于等于2为止。
-while money < 2 :
+while money < 2:
     n = int(input('金币不足,请充值(100块钱等于30个游戏币,充值必须是100的倍数)'))
     # 充值金额判断
-    if n%100 == 0 and n>0 :
-        money= (n//100)*30
+    if n % 100 == 0 and n > 0:
+        money = (n // 100) * 30
 
 # print('当前游戏币是:{},玩一局游戏扣除游戏币2个'.format(money))
-#打印当前的金币数量
+# 打印当前的金币数量
 print('当前游戏币是:{},玩一局游戏扣除游戏币2个'.format(money))
 
 
-
-
 # print('进入游戏.......')
-#进入游戏
+# 进入游戏
 print('进入游戏.......')
 
 
-while True :
+while True:
 
-    #模拟骰子 产生骰子的值
-    t1 = random.randint(1,6)
-    t2 = random.randint(1,6)
+    # 模拟骰子 产生骰子的值
+    t1 = random.randint(1, 6)
+    t2 = random.randint(1, 6)
 
     # 设定两个骰子的值,大于6 等于大,否则就是小
 
-    money -= 2 # 扣除金币
+    money -= 2  # 扣除金币
     print('您的金币余额为{}'.format(money))
     print('系统洗牌完毕,请猜大小:')
-
 
     # 读取用户输入
     guess = input('请输入大或者小(大,输入1,小,输入0):')
 
-    #判断
+    # 判断
 
     print(money)
-    if ((t1 + t2)>6 and guess =="1") or ((t1 + t2)<6 and guess =="0"):
+    if ((t1 + t2) > 6 and guess == "1") or ((t1 + t2) < 6 and guess == "0"):
         # print(t1,t2 )
         print('您猜对了，两个骰子的值分别是{}和{}'.format(t1, t2))
 
@@ -109,7 +117,6 @@ while True :
         print('很遗憾!本局游戏输了.....')
     # 在打印结果时，应该区分胜利和失败的情况，并打印相应的信息。
 
-
     # 在判断用户是否继续游戏时，应该使用一个while循环，直到用户输入'y'或者金币数量不足为止。
 
     # answer = input('是否继续再来一局游戏,要扣除2枚游戏币?(y/n)')
@@ -119,7 +126,6 @@ while True :
     #
     #     break
 
-
     # 判断用户是否继续游戏
     while True:
         answer = input('是否继续再来一局游戏,要扣除2枚游戏币?(y/n)')
@@ -128,37 +134,3 @@ while True :
         elif answer != 'y' or money < 2:
             print('退出游戏!!!!!')
             exit()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

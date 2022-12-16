@@ -1,14 +1,16 @@
 """
-11 - 
+11 -
 
 Date: 2022/12/15
 
 """
+
+
 import random
 
-print('*'*30)
+print('*' * 30)
 print('欢迎进入澳门赌场')
-print('*'*30)
+print('*' * 30)
 
 username = input('请输入你的用户名:')
 money = 0
@@ -36,17 +38,15 @@ print('当前游戏币是:{},玩一局游戏扣除游戏币2个'.format(money))
 print('进入游戏.......')
 while True:
     # 模拟骰子，产生骰子的值
-    t1 = random.randint(1,6)
-    t2 = random.randint(1,6)
+    t1 = random.randint(1, 6)
+    t2 = random.randint(1, 6)
 
-    # 设定两个骰子的值，大于6等于大，否则就是小
-    money -= 2 # 扣除金币
+    money -= 2  # 扣除金币
     print('您的金币余额为{}'.format(money))
     print('系统洗牌完毕,请猜大小:')
 
     # 读取用户输入
     guess = input('请输入大或者小(大,输入1,小,输入0):')
-
 
 
 # 判断用户的猜测是否正确

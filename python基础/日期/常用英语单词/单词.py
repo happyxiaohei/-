@@ -19,7 +19,7 @@ operator   运算符
 identity  特点,特征
 
 
-impot  导入
+input()  导入
 random   随机数,在,,,,期间(之间)
 range  范围
 integer   整型
@@ -27,7 +27,11 @@ sequence  序列  队列
 include    包含
 exclude    不包含
 pass    空语句   
-break
+break    跳出整个循环结构
+continue    跳过循环体中下方的语句不执行,直接进行下一次的循环    
+keyword    关键字
+arguments   参数
+ignore  忽略
 
 
 '''
