@@ -66,6 +66,23 @@ else:
 
 
 
+while True:
+    # 应用:文件上传 只能上传图片(jpg,png,bmp,gif)
+
+    path = input('请选择文件:')  # C:\Users\Admin\mintty.asdf.png
+
+    # 分析上传的文件路径
+
+    p = path.rfind('\\')
+    filename = path[p + 1:]  # 通过切片截取出文件名
+
+    # 判断是否是图片类型?
+
+    if filename.endswith('png') or filename.endswith('txt'):
+        print('图片允许上传')
+        break
+    else:
+        print('不是图片格式,只能上传图片')
 
 
 
